@@ -9,3 +9,11 @@ This is academic project which contains a winform (desktop) application develope
 ## To open the application
 1. Navigate to \<project-path>/parkingSystem/bin/Debug
 2. Open parkingSystem.exe
+3. Login
+  - Admin
+    - Username: admin
+    - Password: simple
+    
+  - User
+    - Username: user
+    - Password: notsimple
