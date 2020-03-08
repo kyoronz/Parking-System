@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DFE0DB63-F802-44B9-976D-0924B57DE6D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>vbtest.My.MyApplication</StartupObject>
+    <RootNamespace>vbtest</RootNamespace>
+    <AssemblyName>parkingSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>parkingSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>parkingSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add.designer.vb">
+      <DependentUpon>Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addsearchic.designer.vb">
+      <DependentUpon>Addsearchic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Addsearchic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adduser.designer.vb">
+      <DependentUpon>Adduser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Adduser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSubMenu.Designer.vb">
+      <DependentUpon>AdminSubMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSubMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerReport.Designer.vb">
+      <DependentUpon>CustomerReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSetPayment.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPayment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetReport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ParkingSlotView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParkingSlotView.Designer.vb">
+      <DependentUpon>ParkingSlotView.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddminMenu.Designer.vb">
+      <DependentUpon>AddminMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddminMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Payment.Designer.vb">
+      <DependentUpon>Payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renew.designer.vb">
+      <DependentUpon>Renew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Renew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update.Designer.vb">
+      <DependentUpon>Update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Update.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.designer.vb">
+      <DependentUpon>User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Useradd.designer.vb">
+      <DependentUpon>Useradd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Useradd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userpasswordedit.designer.vb">
+      <DependentUpon>Userpasswordedit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Userpasswordedit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userview.designer.vb">
+      <DependentUpon>Userview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Userview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.vb">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Add.resx">
+      <DependentUpon>Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addsearchic.resx">
+      <DependentUpon>Addsearchic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adduser.resx">
+      <DependentUpon>Adduser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSubMenu.resx">
+      <DependentUpon>AdminSubMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerReport.rdlc" />
+    <EmbeddedResource Include="CustomerReport.resx">
+      <DependentUpon>CustomerReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParkingSlotView.resx">
+      <DependentUpon>ParkingSlotView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddminMenu.resx">
+      <DependentUpon>AddminMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renew.resx">
+      <DependentUpon>Renew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPayment.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Useradd.resx">
+      <DependentUpon>Useradd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userpasswordedit.resx">
+      <DependentUpon>Userpasswordedit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userview.resx">
+      <DependentUpon>Userview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSetPayment.xsc">
+      <DependentUpon>DataSetPayment.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPayment.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPayment.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetPayment.xss">
+      <DependentUpon>DataSetPayment.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetReport.xsc">
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReport.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetReport.xss">
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VBN.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
